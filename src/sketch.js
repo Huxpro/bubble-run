@@ -1,12 +1,8 @@
 /**
- * Xuechun Wu
- * IGME-609: PE14, 4/18/18
- * Summarization of sketch activity
- */
-
-/**
- * setup : Initialization runs once; called automatically
- * Summarize code that you add
+ * Bubble Run!
+ * 
+ * @arthur Xuechun Wu
+ * @arthur Xuan Huang
  */
 var fairy;
 var bubbles = [];
