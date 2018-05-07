@@ -18,7 +18,7 @@ var timer;
 var globalSpeed;
 
 function setup() {
-	createCanvas(canvasSize, canvasSize);
+	createCanvas(window.innerWidth, window.innerHeight);
 	initGame()
 }
 
@@ -42,15 +42,15 @@ function draw() {
 		background(0, 190, 220);
 		fill(0, 250, 255)
 		textAlign(CENTER);
-		textSize(96);
+		textSize(80);
 		fill(255)
 		var margin = 50;
-		text("Game Over", margin, margin, width-2*margin, height/2)
+		text("GAME OVER", margin, margin, width-2*margin, height/2)
 		textSize(36);
 		text("You survive " + timer + " sec!", margin, height/2+margin, width-2*margin, height/2)
 		textSize(28);
 		fill(0, 150, 255)
-		text("Reload to restart", margin, height/2+130, width-2*margin, height/2)
+		text("Reload to restart", margin, height/2+150, width-2*margin, height/2)
 		return;
 	}
 

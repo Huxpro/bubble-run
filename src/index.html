@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
 
+    <!--Mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!--Edit index.html to change the title.-->
     <title>p5 Sketch Title - Lastname</title>
 
@@ -17,16 +20,25 @@
     <script type="text/javascript" src="Fairy.js"></script>
 
     <style>
-        body {
-            padding: 0;
+        html, body {
             margin: 0;
+            padding: 0;
+            /* prevent old safari from bouncing */
+            height: 100%;
+            overflow: hidden;
         }
-
     </style>
 </head>
 
 <body>
     <!--Add HTML content if you wish. It will appear above your sketch-->
 </body>
+
+<script>
+    /* prevent safari > 11.3 from bouncing */
+    document.body.addEventListener('touchmove', function (e) {
+        e.preventDefault(); 
+    }, {passive: false}); 
+</script>
 
 </html>

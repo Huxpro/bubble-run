@@ -22,7 +22,7 @@ class Reaper {
   bubbleWrap() {
     if (this.y < -this.size) {
       this.y = height + this.size;
-      this.x = random(0, height);
+      this.x = random(0, width);
     }
   }
 }
